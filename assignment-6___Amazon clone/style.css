@@ -1,0 +1,49 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+#topNavBar {
+background-color: #0f1111;
+height: 60px;
+width: 100vw;
+align-content: center;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+#SecondNavBar{
+height: 40px;
+width: 100vw;
+background-color: #232f3e;
+}
+
+#SearchBarSearchBoxYello {
+
+height: 40.33px;
+display: inline-block;
+width: 45px;
+background-color:  rgb(255, 187, 0);
+
+}
+
+.Amazon_navbar_logo {
+width: 114px;
+height: 60px;
+align-items: center;
+display: flex;
+overflow: hidden;
+color: white;
+text-align: center;
+}
+
+.topNavBarContentAfterAmazon {
+
+display: flex;
+margin-right: 14px;
+justify-content: center;
+
+}

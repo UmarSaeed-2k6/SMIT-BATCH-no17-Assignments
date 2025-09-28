@@ -1,0 +1,549 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body {
+background-image: url(Body-backgrounds/body_bg-1.png);
+
+}
+
+#top-pictures {
+
+width: 100%;    
+height: 66px;
+background-color:  #f5f5f5;
+align-content: center;
+display: flex;
+justify-content: center;
+overflow: hidden;
+border-bottom:  2px solid rgba(176, 176, 176, 0.329);
+position: relative;
+
+}
+
+#top-nav-list {
+width: 913px;
+height: 62px;
+display: flex;
+list-style: none;
+
+}
+
+.top-nav-one {
+width: 99px;
+height: 64.67px;
+background-size: contain;
+padding: 9px 10px 8px;
+margin: 0px 10px;    
+background-color: white;
+border: 1px solid rgba(0, 0, 0, 0.361);
+box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+
+}
+.top-nav-two {
+    width: 89px;
+    height: 64.67px;
+    padding: 9px 10px 8px 0px;
+border-right: 2px solid lightgray;
+border-bottom: 1px solid lightgray;
+    
+}
+.top-nav-two:hover{
+    cursor: pointer;
+    animation: nav1-animation 0.3s linear 1 ;
+
+}
+
+.top-nav-three {
+    width: 103px;
+    height: 64.67px;
+    padding: 9px 10px 8px;
+    border-right: 2px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.top-nav-three:hover {
+
+    cursor: pointer;
+    animation: nav1-animation 0.3s linear 1 ;
+
+}
+
+
+
+
+.top-nav-main-container:hover li { 
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+
+.top-nav-conatainer2 li {
+
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+    cursor: pointer; 
+}
+
+.top-nav-conatainer2 li:hover { 
+    opacity: 1; 
+}
+
+.top-nav-conatainer2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 62px;
+    padding: 0; 
+    margin: 0;  
+}
+
+
+.top-nav-four {
+    width: 183px;
+    height: 64.67px;
+    margin: 6px 0px 6px 7px;
+}
+
+.top-nav-five {
+    width: 182px;
+    height: 64.67px;
+    margin: 6px 0px 6px 7px;
+}
+
+.top-nav-six {
+    width: 183px;
+    height: 64.67px;
+    margin: 6px 0px 6px 7px;
+}
+
+/* Styling for the image inside the LI, ensuring it fits */
+
+.image-of-topnav {
+
+    border-top:2px solid rgba(128, 128, 128, 0.594);
+    border-left:2px solid rgba(128, 128, 128, 0.594) ;
+}
+
+#navbar2 {
+width: 100%;
+height: 89px;
+background-color: white;
+display: flex;
+justify-content: center;
+position: sticky;
+top: -42px;
+}
+
+.second-nav-icons {
+
+height:92px ;
+width: 127.85px;
+text-align: center;
+align-content: center;
+
+
+}
+
+#icon1 {
+
+    border-bottom: 7px solid #919191;
+    border-bottom-left-radius: 5px;
+    background:#919191;
+    overflow: hidden;
+}
+#icon1:hover {
+    cursor: pointer;
+}
+
+#icon2 {
+    border-bottom: 7px solid #E3350D;
+    background-image: url(Navbar-icons/pokeball_gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease;
+    
+}
+#icon2:hover {
+background: #E3350D;
+background-image: url(Navbar-icons/pokeball_white.png);
+background-size: 26px 26.65px;
+background-position-x: center;
+background-position-y: 15px;
+background-repeat: no-repeat;
+color: white;
+cursor: pointer;
+}
+
+#icon3 {
+
+    border-bottom:7px solid #EE6B2F;
+    background-image: url(Navbar-icons/joystick-gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease;
+}
+#icon3:hover {
+    background: #EE6B2F;
+    background-image: url(Navbar-icons/joystick-white.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: white; 
+}
+
+#icon4 {
+    border-bottom: 7px solid #E6bc2f;
+    background-image: url(Navbar-icons/pokemon-card-gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease;
+    
+}
+
+#icon4:hover {
+    background: #E6bc2f;
+    background-image: url(Navbar-icons/pokemon-card-white.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat; 
+    color: white;
+    cursor: pointer;
+}
+
+#icon5 {
+    border-bottom: 7px solid green;
+    background-image: url(Navbar-icons/play-button-gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease;
+    
+}
+#icon5:hover {
+    background: green;
+    background-image: url(Navbar-icons/play-button-white.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat; 
+    color: white;
+    cursor: pointer;
+}
+
+#icon6 {
+    border-bottom: 7px solid #30a7d7;
+    background-image: url(Navbar-icons/icon-trophy-gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease;
+    
+}
+#icon6:hover {
+    background: #30a7d7;
+    background-image: url(Navbar-icons/icon-trophy-white.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat; 
+    color: white;
+    cursor: pointer;
+}
+
+#icon7 {
+    border-bottom: 7px solid #1b53ba;
+    border-bottom-right-radius: 5px;
+    background-image: url(Navbar-icons/icon-newspaper-gray.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease;
+    
+}
+#icon7:hover {
+    background: #1b53ba;
+    background-image: url(Navbar-icons/icon-newspaper-white.png);
+    background-size: 26px 26.65px;
+    background-position-x: center;
+    background-position-y: 15px;
+    background-repeat: no-repeat; 
+    color: white;
+    cursor: pointer;
+
+
+}
+
+
+.icons-paras{
+
+    font-size: 13.125px;
+    font-family: "roboto",Arial, sans-serif;
+    color: #464646;
+    display: inline-block;
+    margin-top: 38px;
+
+}
+.second-nav-icons:hover .icons-paras {
+
+    color: white;
+
+}
+
+
+#login-bar {
+
+    width: 57px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 178px;    
+
+}
+
+
+
+.login-bar-outline-container {
+   
+    background-color: #54b364;
+    background-image: url(login-fixed/profile-nav-signup.png);
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center ;
+    align-content: center;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 10.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-right: 3px solid black;
+    border-top:3px  solid black ;
+    height: 105px;
+    width: 60px;
+    display: inline-block;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+    transition: all 0.3s ease;
+
+}
+
+.login-bar-outline-container:hover {
+
+    cursor: pointer;
+    background-color:#2b7938;
+
+}
+
+.fixed-search-icon {
+
+    height: 67px;
+    width: 60px;
+    border-right:3px solid black ;
+    border-bottom:3px solid black ;
+    background: rgb(108, 108, 108);
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.fixed-search-icon:hover {
+    background: #30a7d7;
+    cursor: pointer;
+}
+
+.grid1 {                                 /*          grid-1-start            */
+    margin: 0 auto;
+    height:850.51px ;  
+    width: 1024px;
+    background-color: white;
+    border-top: 2px solid rgba(176, 176, 176, 0.329);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    padding: 25px 0px 15px;
+    }
+
+.grid1-item1 {
+    
+grid-row-start: 2;
+grid-row-end:14 ;
+grid-column-start:3;
+grid-column-end: 19;
+background-color:#B38AEA;
+
+}
+.grid1-item1:hover {
+    animation: bounce 0.2s linear 1 ;
+    background-color: #8c5acc;
+    cursor: pointer;
+}
+
+.grid1-item2 {
+    grid-row-start: 2;
+    grid-row-end:9;
+    grid-column-start:19 ;
+    grid-column-end: 25;
+    background-color: #EE6B2F;
+    height: 288px;
+}
+.grid1-item2:hover {
+    animation: bounce 0.2s linear 1 ;
+    background-color:#c3460c;
+    cursor: pointer;
+}
+.grid1-item3{
+
+    grid-row-start: 9;
+    grid-row-end:16;
+    grid-column-start:19 ;
+    grid-column-end: 25;
+    background-color:#C7AA79;    
+    height: 288px;
+}
+.grid1-item3:hover {
+    animation: bounce 0.2s linear 1 ;
+    background-color: #a48247;
+    cursor: pointer;
+}
+.grid1-item4{
+
+    grid-row-start: 14;
+    grid-row-end:20 ;
+    grid-column-start:3;
+    grid-column-end: 11;
+    background-color:#A4A4A4;
+    
+}
+.grid1-item4:hover {
+    animation: bounce 0.2s linear 1 ;
+    background-color: #919191;
+    cursor: pointer;
+}
+.grid1-item5{
+
+    grid-row-start: 14;
+    grid-row-end:21 ;
+    grid-column-start:11;
+    grid-column-end: 19;
+    background-color: #FF90C4;
+    
+}
+.grid1-item5:hover {
+    animation: bounce 0.2s linear 1 ;
+    background-color: #ff298d;
+    cursor: pointer;
+}
+.grid1-item6{
+
+    grid-row-start: 16;
+    grid-row-end:20;
+    grid-column-start:19 ;
+    grid-column-end: 25;
+    background-color: #0000EE;
+
+}
+.grid1-item6:hover {
+    animation: bounce 0.2s linear 1 ;
+    cursor: pointer;
+}
+#g1i1i {
+
+width: 325px;
+width: 626.31px;
+
+}
+
+#g1i2i {
+height: 158.1px;
+width: 228.62px;
+
+}
+
+#g1i3i {
+width: 228.62px;
+height:158.1px ;
+
+}
+
+
+#g1i4i{
+
+width: 308.16px;
+height: 157.08px;
+
+}
+#g1i5i {
+height: 157.08px;
+width: 308.16px;
+}
+
+
+#g1i6i {
+
+width: 112.24px;
+height: 154;
+}
+
+.big-head-grid-1-para {
+font-size:20.625px ;
+color: white;
+margin: 15.4688px 10.3125px 0px 20.625px;
+font-family:  "Roboto Flex", sans-serif;
+font-weight:400 ;
+
+}
+.big-head-grid-1-para2 {
+font-size: 16px;
+margin-top: 4px;
+margin-left: 20px;
+margin-right: 10px;
+font-family: "roboto",Arial, Helvetica, sans-serif;
+color: #4B1A8E;
+
+}
+
+@keyframes bounce {
+0% {
+transform: translateY(0px);
+}
+50% {
+transform: translateY(-5px);
+
+}
+100% {
+
+transform: translateY(0px);
+}
+}
+@keyframes nav1-animation {
+    0% {
+    transform: translateY(0px);
+    filter: blur(0px);    
+}
+    50% {
+    transform: translateY(5px);
+    filter: blur(2px);
+    }
+    100% {
+    
+    transform: translateY(0px);
+    filter: blur(0px);
+    }
+    }

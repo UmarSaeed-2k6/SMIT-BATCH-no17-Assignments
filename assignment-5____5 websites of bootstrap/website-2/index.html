@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #fff !important;
+      border-bottom: 2px solid #f97316;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #f97316 !important;
+    }
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: #f97316 !important;
+    }
+    /* Hero Section */
+    .hero {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f97316;
+    }
+    .btn-custom {
+      background-color: #f97316;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .btn-custom:hover {
+      background-color: #c2410c;
+    }
+    .section-title {
+      color: #f97316;
+      font-weight: bold;
+    }
+    /* Carousel image height */
+    .bike-img {
+      height: 400px;
+      object-fit: cover;
+    }
+    /* Contact */
+    .contact-section {
+      background-color: #111;
+      color: #fff;
+    }
+    footer {
+      background-color: #f97316;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">🏍️ Bike World</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bikes">Bikes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <h1>Find Your Perfect Ride</h1>
+        <p class="lead">From city rides to adventure trails, Bike World has the perfect motorcycle for you.</p>
+        <a href="#bikes" class="btn btn-custom btn-lg">View Bikes</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="" class="img-fluid rounded shadow" alt="Bike">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="p-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title">About Us</h2>
+    <p class="mt-3">Bike World is your one-stop destination for motorcycles, gear, and accessories. We believe riding is not just transport—it’s a lifestyle. Our shop offers the latest models and expert guidance to help you choose the ride that suits your personality.</p>
+  </div>
+</section>
+
+<!-- Bikes Section with Carousel -->
+<section id="bikes" class="p-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Featured Bikes</h2>
+    <div id="bikeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="data:image/jpeg;base64,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" class="d-block w-100 bike-img" alt="Sports Bike">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sports Bike</h5>
+            <p>Unmatched speed and performance.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemt3wO2X046wMK51IxHhGUVaeHBXh5w3xzw&s" class="d-block w-100 bike-img" alt="Cruiser">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cruiser</h5>
+            <p>Comfort for your long journeys.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScrlus29gqs4MIvLx4OhSrfQmtpDjvYNEpQ&s" class="d-block w-100 bike-img" alt="Dirt Bike">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dirt Bike</h5>
+            <p>Conquer any terrain with ease.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bikeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bikeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section p-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 text-white">Contact Us</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+          <button class="btn btn-custom w-100">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">Address:</h5>
+        <p>987 Rider Avenue, Islamabad, Pakistan</p>
+        <h5 class="fw-bold">Phone:</h5>
+        <p>+92 333 1122334</p>
+        <h5 class="fw-bold">Shop Hours:</h5>
+        <p>Mon - Sat: 10 AM - 9 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-3">
+  <p class="mb-0">© 2025 Bike World | Ride with Freedom</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

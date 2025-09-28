@@ -1,0 +1,846 @@
+* {
+padding: 0;
+border: 0;
+cursor: pointer;
+}
+/*-----start-----*/
+#navbar {
+display: flex;
+list-style: none;
+justify-content: center;
+flex-direction: row;
+gap: 25px;
+
+}
+.nav {
+text-decoration: none;
+color: black;
+font-family:"Noto Sans JP", sans-serif;
+
+}
+
+#navbar:hover {
+cursor: pointer;
+    }
+
+#mainpagediv {
+    
+background-image:url(Assets/page\ 1.jpg) ;
+height: 800px;
+background-size: cover;
+display: flex; 
+justify-content: center; 
+align-items: center;
+flex-direction: column;
+
+}
+
+#p1b1 {
+margin-top: 0;    
+margin-bottom:8px ;
+background-color: #0071e3;
+color: white;
+height: 200px;
+width: 300px;
+padding: 25px;
+border-radius: 80px;
+font-size: 50px;
+text-align: center;
+justify-items:center ;
+font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+
+}
+
+#p1b2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    background-color: #0071e3;
+    color: white;
+    height: 40px;
+    padding: 20px;
+    border-radius: 45px;
+    font-size: xx-large;
+    text-align: center;
+    width: 350px;
+    justify-content: center;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+}
+
+#p1b3 {
+margin-top:0 ;
+margin-bottom: 25px;
+background-color: #0071e3;
+color: white;
+height: 220px;
+padding: 25px;
+border-radius: 60px;
+font-size: 50px;
+text-align: center;
+width: 350px;
+justify-content: center;
+font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+
+}
+
+
+#p1button {
+    margin-top: 0;
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: #0071e3; 
+    background-color: #f5f5f7; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+    
+}
+
+#p1button:hover {
+cursor: pointer;
+background-color: #0071e3;
+color: white;
+border-color:  #c7c7cc;
+}
+
+#second_page {
+background-image: url(assets/hero_iphone_family.jpg);
+height: 680px;
+background-size: cover;
+margin-top: 10px;
+text-align: center;
+justify-content: center;
+padding-top: 5px;
+
+
+}
+
+#p2h1 {
+font-weight: 500;
+font-size: 65px;
+font-family: "Roboto", sans-serif;
+margin-bottom: 5px;
+
+}
+
+#p2p2 {
+font-size: 45px;
+font-family: "Noto Sans JP", sans-serif;
+font-weight: 350;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+#p2b1 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color:#f5f5f7; 
+    background-color:#0071e3; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+
+
+}
+
+#p2b1:hover {
+
+background-color: #015bb4;
+
+}
+
+#p2b2 {
+
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: #0071e3; 
+    background-color: #f5f5f7; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+
+
+}
+
+#p2b2:hover {
+
+    background-color: #0071e3;
+    color: white;
+    border-color:  #c7c7cc;
+
+}
+
+.mixed-color-text {
+    font-size: 21px; 
+    font-weight: bold;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to right, #0071e3, #6e15bd, #d36d07, #d09e1e);
+
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+}
+
+
+#third_page {
+background-image: url(assets/page_3.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 950px;
+margin-top: 10px;
+align-items: center;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-bottom: 50px;
+box-sizing: border-box;
+
+
+
+
+}
+
+#p3p1 {
+color:white;
+font-size: 60px;
+font-family: "Noto Sans JP",sans-serif;
+font-weight: 500;
+margin-bottom: 8px;
+}
+
+#p3p2 {
+color:white;
+font-size: 25px;
+font-family: sans-serif;
+font-weight: 200;
+margin-top: 0;
+}    
+
+#button_container {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 16px; 
+
+}
+
+
+#p3b1 {
+
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: black; 
+    background-color:rgba(255, 255, 255, 0.874); 
+    border: 1px solid transparent ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+
+}
+
+#p3b1:hover {
+
+background-color: white;
+
+}
+
+
+#p3b2 {
+
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight:bold; 
+    text-align: center; 
+    text-decoration: none;
+    color: white; 
+    background-color: transparent; 
+    border: 1px solid white ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+
+}
+
+#p3b2:hover {
+
+    color: black; 
+    background-color: white; 
+    border: 1px solid transparent ;    
+}
+
+#fourth_page {
+display: flex;
+flex-wrap: wrap;
+row-gap: 10px;
+column-gap: 10px;
+}
+
+#p4div1 {
+    background-image: url(assets/promo_macbook.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 8px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#d1p1 {
+margin: 5px;
+padding-top: 35px;
+font-size: 45px;
+font-family: "Roboto", sans-serif;
+font-weight: 550;
+display: inline-block;
+
+}
+
+#d1p2 {
+margin-top: 0;
+margin-bottom: 5px;    
+font-size: 25px;
+font-family: "Roboto", sans-serif;
+
+
+}
+
+#d1p3 {
+
+    margin-top: 0;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#p4div1buttons {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+
+}
+
+.p4d1b1 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: white; 
+    background-color:#0071e3; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+    margin-right: 8px;
+}
+.p4d1b1:hover {
+
+    background-color:#015bb4;
+    color: white;
+    border-color:  #c7c7cc;
+}
+
+
+
+#p4d1b2 {
+
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: #0071e3; 
+    background-color: #f5f5f7; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+    
+}
+#p4d1b2:hover {
+
+    background-color: #0071e3;
+    color: white;
+    border-color:  #c7c7cc;
+
+}
+.mixed-color-text2 {
+    font-size: 18px; 
+    font-weight: bold;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to right, #0071e3, #6e15bd, #d36d07, #d09e1e);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+    margin-top: 395px;
+}
+
+
+#p4div2 {
+background-image: url(assets/promo_ipadpro.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 49%;
+display: inline-block;
+margin-top: 8px;
+justify-content: center;
+text-align: center;
+}
+
+#p4d2p1  {
+    margin: 5px;
+    padding-top: 35px;
+    font-size: 45px;
+font-family: "Roboto", sans-serif;
+font-weight: 550;
+display: inline-block;
+color: white;
+
+}
+
+#p4d2p2   {
+margin-top: 0;    
+font-size: 25px;
+font-family: "Roboto", sans-serif;
+color: white;    
+}
+
+#p4div2buttons {
+display: flex;
+flex-direction: row;
+margin-top: 15px;
+justify-content: center;
+text-align: center;
+
+}
+
+.p4d2b2 {
+
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: #0071e3; 
+    background-color: transparent; 
+    border: 1px solid #0071e3 ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+
+}
+
+.p4d2b2:hover {
+background-color: #0071e3;
+color: white;
+
+
+
+}
+
+.mixed-color-text3 {
+    font-size: 18px; 
+    font-weight: bold;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to right, #0071e3, #6e15bd, #d36d07, #d09e1e);
+
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+    margin-top: 425px;
+}
+
+#p4div3 {
+    background-image: url(assets/promo_apple_watch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+#p4d3p1 {
+    
+    font-size: 50px;
+    margin: 5px;
+    margin-bottom: 3px;
+    padding-top: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    display: inline-block;
+    color: black;
+
+
+}
+
+#p4d3p2 {
+margin-top: 0;
+margin-bottom: 3px;
+font-family: "Roboto", sans-serif;
+font-size:15px;
+font-weight: 500;
+color: black;
+font-family: "Karla", sans-serif
+}
+
+#p4d3p3 {
+margin-top: 0;
+font-size:25px;
+font-family: "Roboto", sans-serif;
+font-weight: 350;
+color: black;
+
+}
+
+#p4div4 {
+background-image: url(assets/promo_fitness_plus_summer.png);
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 49%;
+display: inline-block;
+margin-top: 10px;
+text-align: center;
+justify-content: center;
+}
+
+#p4d4p1 {
+    margin: 5px;
+    padding-top: 35px;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif; 
+font-weight: 550;
+display: inline-block;
+color: white;
+
+
+}
+
+#p4d4p2 {
+
+    margin-top: 0;    
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;    
+    
+
+}
+
+#p4d4b1 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.865); 
+    border: 1px ; 
+    border-radius: 22px; 
+    cursor: pointer; 
+}
+
+#p4d4b1:hover {
+background-color: white;
+
+}
+
+
+
+#p4d4b2 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: lighter; 
+    text-align: center; 
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.865); 
+    background-color: transparent; 
+    border: 1px solid rgba(255, 255, 255, 0.865); 
+    border-radius: 22px; 
+    cursor: pointer; 
+    margin-left: 8px;
+}
+
+#p4d4b2:hover {
+background-color: rgba(255, 255, 255, 0.865);
+color: black;
+
+}
+
+
+
+#p4div5 {
+    background-image: url(assets/promo_iphone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    justify-content:center;
+    text-align:center;
+}
+
+.p4d5p1 {
+
+    font-size: 50px;
+    margin: 5px;
+    margin-bottom: 3px;
+    padding-top: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    display: inline-block;
+    color: black;
+
+
+
+}
+
+.p4d5p2 {
+
+    margin-top: 10px;    
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: black;    
+    margin-bottom:3px;
+
+
+}
+
+.p4d5p3 {
+
+    margin-top: 0;    
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: black;    
+
+
+
+}
+
+
+#p4div6 {
+background-image: url(assets/promo_apple_card.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+width: 49%;
+display: inline-block;
+margin-top: 10px;
+justify-content:center;
+text-align:center; 
+
+}
+
+#poster1 {
+
+margin-top:5px;
+background-image: url(Assets/messi.jpg);
+height: 780px;
+width: 100%;
+background-repeat: no-repeat;
+
+}
+
+
+#poster2{
+
+margin-top:5px;
+background-image: url(Assets/baseball.jpg);
+height: 750px;
+width: 100%;
+background-repeat: no-repeat;
+
+}
+
+#page5 {
+height: 700px;
+background-color: #e4e4e5;
+
+
+}
+
+.page5div {
+color: rgb(111, 110, 110);
+font-size: 15px;
+padding-left: 12.5%;
+padding-top: 20px;
+margin-top:20px;
+padding-right: 15%;
+cursor:default;
+}
+
+.page5div:hover {
+cursor: text;
+
+
+
+}
+
+.apple-hr {
+    border: none; /* Default border hata den */
+    border-top: 2px solid #d2d2d7; /* Halka surmai rang ki 1px solid line */
+    margin: 20px 0; /* Line ke upper aur neeche space */
+    width: 100%;
+}
+
+#p5link1 {
+color: rgb(111, 110, 110);
+background-color: #c7c7cc;
+}
+
+#lastinfo {
+
+    height: 480px;
+    background-color: #e4e4e5;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+justify-content: center;
+text-align: start;
+cursor: default;
+}
+
+.divsoflastpage {
+
+width: 15%;
+display: inline-block;
+display: flex;
+flex-direction: column;
+color: rgb(111, 110, 110);
+text-transform: capitalize;
+cursor: default;
+}
+
+.infoheads {
+
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 0;
+
+}
+
+.infoheads:hover {
+cursor: text;
+
+}
+
+.infocontent {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: rgb(111, 110, 110);
+    font-weight: 300;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    text-align: start;
+}
+.infocontent:hover {
+text-decoration: underline black ;
+
+}
+
+.secinfoheads {
+  
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 0;
+    margin-top: 30px;
+    
+}
+
+.secinfoheads:hover {
+    cursor: text;
+}
+
+#div_last {
+
+height: 50px;
+background-color: #e4e4e5;
+display: flex;
+color: rgb(111, 110, 110);
+font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+font-weight: 250;
+font-size: smaller;
+}
+
+.footer {
+margin-left: 11%;
+}
+
+#belowfoot {
+height: 10px;
+background-color: #e4e4e5;
+
+}
+
+.twoapple-hr {
+    border: none; /* Default border hata den */
+    border-top: 2px solid #d2d2d7; /* Halka surmai rang ki 1px solid line */
+    margin:0; /* Line ke upper aur neeche space */
+    width: 100%;
+
+}
+
+#finaldiv {
+    height: 40px;
+    background-color: #e4e4e5;
+    
+    
+}
+
+#belowfooter {
+margin: 0;
+margin-left: 11%;
+color: rgb(111, 110, 110);
+font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+font-weight: 250;
+font-size: smaller;
+display: inline-block;
+}
+
+#USA {
+display: inline-block;
+margin: 0;
+margin-left: 670px;
+color: rgb(111, 110, 110);
+font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+font-weight: 500;
+font-size: 15px;
+}
+/*-----End-----*/

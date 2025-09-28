@@ -1,0 +1,151 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern, clean font */
+    background-color: #1a1a2e; /* Very dark blue-purple background - like a dark nebula */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #e0e0eb; /* Light greyish-purple for default text */
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #2a2a4a; /* Slightly lighter dark blue-purple for the main box */
+    box-shadow: 0 0 25px rgba(102, 0, 204, 0.4); /* Glowing purple shadow */
+    min-height: 85vh; /* Increased minimum height */
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; /* More space from top */
+    margin-bottom: 40px;
+    border-radius: 12px; /* More rounded corners for a modern feel */
+    overflow: hidden;
+    border: 1px solid #4f2a7a; /* Subtle border for definition */
+}
+
+.header-section {
+    background-color: #4a148c; /* Deep, rich purple - prominent */
+    color: #e0e0eb; /* Light text for contrast */
+    padding: 30px 20px; /* Increased padding for impact */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #6a0dad; /* A stronger purple line underneath */
+}
+
+.header-section h1 {
+    margin: 0;
+    font-size: 3.2em; /* Larger, bolder h1 */
+    letter-spacing: 2px; /* More spacing for a futuristic look */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle text glow */
+}
+
+/* --- Content Wrapper (Sidebar + Main Content) --- */
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* --- Sidebar Navigation Styling --- */
+.sidebar-navigation {
+    background-color: #333355; /* Slightly darker purple-grey for sidebar */
+    width: 250px; /* Wider sidebar for emphasis */
+    padding: 30px 20px; /* Increased padding */
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-right: 1px solid #4f2a7a; /* Matching border with main-container */
+}
+
+.sidebar-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-navigation ul li {
+    margin-bottom: 20px; /* More space between links */
+}
+
+.sidebar-navigation ul li a {
+    text-decoration: none;
+    color: #9c27b0; /* Bright, vibrant purple for links */
+    font-weight: 600; /* Bolder links */
+    font-size: 1.25em; /* Larger link font */
+    display: block;
+    padding: 12px 15px; /* Bigger clickable area */
+    border-radius: 8px; /* More rounded link buttons */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-shadow: 0 0 5px rgba(156, 39, 176, 0.3); /* Subtle glow on links */
+}
+
+.sidebar-navigation ul li a:hover {
+    background-color: #5d3d7f; /* Darker purple on hover */
+    color: #ffeb3b; /* Bright yellow/gold for a strong contrast on hover */
+    transform: translateX(8px); /* More pronounced hover effect */
+    box-shadow: 0 0 15px rgba(255, 235, 59, 0.4); /* Yellow glow on hover */
+}
+
+/* --- Main Content Area Styling --- */
+.main-content-area {
+    flex-grow: 1;
+    padding: 40px; /* More padding for content */
+    box-sizing: border-box;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #c0c0d8; /* Lighter greyish-purple for main text for contrast with dark background */
+}
+
+.main-content-area h2 {
+    color: #9c27b0; /* Bright purple for main headings */
+    margin-top: 0;
+    margin-bottom: 30px; /* More space below h2 */
+    font-size: 2.5em; /* Adjusted h2 font size */
+    border-bottom: 1px solid #6a0dad; /* Subtle purple line below heading */
+    padding-bottom: 10px;
+}
+
+.main-content-area h3 {
+    color: #ffeb3b; /* Bright yellow/gold for sub-headings for strong contrast */
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.main-content-area ul {
+    list-style-type: none; /* Default bullets remove kiye */
+    padding-left: 0; /* Default padding remove kiya */
+}
+
+.main-content-area ul li {
+    margin-bottom: 12px; /* Adjusted list item spacing */
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet */
+}
+
+.main-content-area ul li::before {
+    content: '\2022'; /* Custom bullet point (filled circle) */
+    color: #ffeb3b; /* Yellow/gold bullet */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-content-area a {
+    color: #ffeb3b; /* Bright yellow/gold for links in content */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-content-area a:hover {
+    color: #ffee58; /* Slightly lighter yellow on hover */
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(255, 235, 59, 0.6); /* Glowing effect on hover */
+}
+
+/* Enhancements for a 'trading app' feel */
+p {
+    margin-bottom: 1em;
+}

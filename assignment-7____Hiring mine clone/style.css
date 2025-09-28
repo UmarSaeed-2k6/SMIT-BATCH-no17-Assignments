@@ -1,0 +1,549 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/* ---- Laptop Navbar Clone ---- */
+:root{
+  --hm-primary:#6851FF;
+  --hm-text:#1f2937;
+}
+
+/* Bar + container */
+.hm-navbar{
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.hm-wrap{
+  max-width:1200px;              /* roomy like screenshot */
+  height:72px;                   /* navbar height */
+  margin:0 auto;
+  padding:0 24px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;  /* logo | menu (center) | toggle */
+  align-items:center;
+  column-gap:24px;
+  box-sizing:border-box;
+}
+
+/* Logo */
+.hm-logo img{
+  height:44px;                   /* set logo size */
+  width:auto;
+  display:block;
+}
+
+/* Center menu */
+.hm-menu{
+  list-style:none;
+  display:flex;
+  justify-content:center;        /* center between logo & toggle */
+  align-items:center;
+  gap:36px;                      /* spacing like screenshot */
+  margin:0;
+  padding:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;
+}
+.hm-menu a{
+  text-decoration:none;
+  font-size:16px;
+  color:var(--hm-text);
+}
+.hm-menu a:hover{ color:var(--hm-primary); }
+.hm-menu a.primary{
+  color:var(--hm-primary);       /* “Employee / Post Job” */
+  font-weight:500;
+}
+
+/* Theme toggle (visual clone) */
+.hm-theme{
+  position:relative;
+  width:68px; height:34px;
+  border:0; background:transparent;
+  padding:0; cursor:pointer;
+}
+.hm-theme-track{
+  position:absolute;
+  right:6px; top:50%;
+  transform:translateY(-50%);
+  width:50px; height:20px;
+  background:#c2c9d1;            /* grey track */
+  border-radius:999px;
+}
+.hm-theme-thumb{
+  position:absolute;
+  right:0; top:50%;
+  transform:translateY(-50%);
+  width:34px; height:34px;
+  background:#092038;            /* dark navy circle */
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* Optional: keep page from accidental horizontal scroll */
+body{ overflow-x:hidden; }
+
+
+  
+  .toggle-container-of-hiring-mine {
+    position: relative;
+    width: 310px;
+    height: 70px;
+    
+    margin: 0 auto;
+    border-radius: 999px;
+    border: 3px solid rgba(255, 192, 203, 0.3); /* light pinkish border */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: sans-serif;
+  }
+  
+  .slider-hiring-mine {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    width: 150px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0.95;
+  }
+  
+  .btn-p1 {
+    width: 150px;
+    height: 58px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    z-index: 2;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-p1:hover {
+    transform: scale(1.05);
+    color: #4b5563; /* greyish text on hover */
+  }
+  
+  .active-text {
+    color: #f1f1f1 !important; /* light text when active */
+  }
+  
+  .inactive-text {
+    color: rgb(77, 76, 76) !important;
+  }
+  
+  .mixed-color-text {
+background: linear-gradient(to right, #001aff, #b3d9ff);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+font-size: 45px;
+font-weight: 600;
+font-family: "roboto" , Arial, Helvetica, sans-serif;  
+display: inline-block;
+width: 100vw;
+text-align: center;
+margin: 0 auto;
+
+}
+
+.mixed-color-text :last-child {
+
+margin-top: 0;
+margin-bottom: 20px;
+
+}
+
+.landing-page-introduction {
+width: 735px;
+height:64px ;
+text-align: center;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+margin: 0 auto;
+}
+.landing-page-introduction p {
+margin-top: 16px;
+
+}
+
+#input-text-placeholder-div-page1 {
+width: 100vw;
+text-align: center;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+
+
+.search-bar-lading-page1 {
+
+width: 538.25px;
+height: 40px;
+padding: 8.5px 0px 8.5px 16px;
+border:1px solid #74777b;
+margin-top: 5px;
+border-right: none;
+}
+
+.search-bar-icon-landing-page1 {
+width: 19.27px;
+height: 17.43px;
+
+
+}
+.search-bar-icon-divbar-landing-page1 {
+  border: 1px solid #74777b;
+  height: 40px;
+width: 45px;
+border-left: none;
+margin-top: 5px;
+align-content: center;
+justify-content: center;
+}
+
+.find-jobs-button {
+width:140px ;
+height:48px ;
+background-color: #6851FF;
+color: #FFFFFF;
+font-size: 16px;
+font-family: "roboto", Helvetica,arial, sans-serif;
+border-radius: 30px;
+box-shadow: 1px 1px 2px 0px #6851FF;
+
+}
+
+.find-jobs-button :focus {
+outline: none;
+box-shadow: 0 0 0 3px #1a73e8;
+}
+.find-jobs-button-div {
+width: 100vw;
+text-align: center;
+margin-top: 24px;
+
+}
+
+.landing-page-popular-searches-heading {
+width:100vw ;
+height:48px ;
+text-align: center;
+}
+.landing-page-popular-searches-heading-tag {
+font-size: 30px;
+font-family: "roboto",Arial, Helvetica, sans-serif;
+margin-top: 24px;
+color: #6851FF;
+}
+
+.popular-searches-container {
+  display: flex;
+  flex-wrap: wrap;       /* buttons wrap karenge */
+  justify-content: center;
+  gap: 12px;             /* space between buttons */
+  max-width: 850px;      /* limit width */
+  margin: 20px auto;     /* center align */
+  padding: 0 10px;
+}
+
+.search-btn {
+  padding: 8px 18px;
+  border: 1px solid #6851FF;
+  background-color: #fff;
+  color: #6851FF;
+  font-size: 14px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #6851FF;
+  color: #fff;
+}
+
+.ai-tallent-assitant {
+background-size: cover;
+background-image: url(Assets/AMazonNAV.png);
+width: 100%;
+height: 250px;
+}
+
+.input-AI-Talent-Assistant {
+
+  width: 78vw ;
+  margin: 0 auto;
+  height:325px;
+ 
+
+}
+
+.AI-Talent-Assistant-message-bar {
+width: 70% ;
+height:94px ;
+border-radius: 20px;
+padding: 18px;
+margin-top: 20px;
+margin-left: 20px;
+font-size: 16px;
+font-family: "roboto",sans-serif;
+background-color: #ead5ff;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.input-AI-Talent-Assistant-H1 {
+
+  font-size: 16px;
+font-family: "roboto",sans-serif;
+margin-top: 20px;
+margin-left: 20px;
+}
+.input-AI-Talent-Assistant-div2 {
+  width: 78vw ;
+  margin: 0 auto;
+  height:105px;
+  
+text-align: center;
+
+}
+
+.input-AI-Talent-Assistant-buttons {
+
+  width:150px ;
+  height:32px ;
+border-radius: 15px;
+border: 1px solid lightgray;
+background-color:#f7f2fc ;
+font-size: 13px;
+font-family: "roboto",sans-serif;
+}
+
+.input-ai-border {
+
+  border: 1px solid rgba(21, 21, 21, 0.521);
+  border-radius: 20px;
+  width: 78vw ;
+  margin: 0 auto;
+   height: auto;
+   box-shadow: 0px 2px 2px 1px #c2c9d1;
+
+}
+
+.input-ai-talent-input-placeholder {
+width: 90%;
+height: 40px;
+padding: 8.5px 0px 8.5px 14px;
+border-radius: 5px;
+background-color: #ffffff;
+border: 2px solid lightgray;
+margin-left: 12px;
+margin-bottom: 12px;
+}
+
+
+.steps-section {
+  text-align: center;
+  margin: 80px auto;
+  width: 85%;
+}
+
+.steps-heading {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.steps-heading span {
+  color: #6b21a8; /* purple accent */
+}
+
+.steps-subtitle {
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.step-card {
+  flex: 1;
+  background: linear-gradient(to bottom, #ffffff, #f9f6ff);
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(107, 33, 168, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 32px;
+  color: #6b21a8;
+  margin-bottom: 15px;
+  font-family: "roboto", sans-serif;
+}
+
+.step-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 10px;
+  font-family: "roboto", sans-serif;
+}
+
+.step-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+ font-family: "roboto", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.hm-footer {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(180deg, #413ad6, #8c45ff);
+  color: #fff;
+  padding: 50px 0 20px;
+}
+
+.hm-footer .footer-logo {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.hm-footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: "roboto", sans-serif;
+}
+
+.hm-footer h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "roboto", sans-serif;
+}
+
+.social-icons {
+ margin-left: 20px;
+display: flex;
+flex-direction: row;
+column-gap: 70px;
+}
+
+
+
+
+.footer-right p,
+.footer-right a {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+}
+.footer-right {
+transform: translate(1020px,-210px);
+
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-left {
+
+  width: 300px;
+  height: 240px;
+margin-left: 20px;
+}
+
+.chat-fixed {
+height:55px ;
+width:55px ;
+  position: fixed;
+right: 10px;
+bottom: 10px;
+}
+
+.chat-fixed:hover {
+
+  cursor: pointer;
+}
+
+.landing-page-last-container {
+
+  display: flex;
+  flex-direction:row ;
+justify-content: center;
+}
+
+.landing-page-last-container-text1 {
+
+width: 406.7px;
+height: 171px;
+font-size: 45px;
+color: #3F3F3F;
+font-family: "roboto", sans-serif;
+font-weight: 600;
+}
+
+.landing-page-last-container-text2 {
+
+  width: 406.7px;
+  height: 171px;
+  font-size: 45px;
+  color: #3F3F3F;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+
+}
